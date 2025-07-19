@@ -1,5 +1,8 @@
 # Proof of Witness Workshop Guide
 
+## Architecture diagram for NOIR 
+https://excalidraw.com/#json=ih9AGBbdTSTvwF8R8S6Ka,bvSLLBYwdrKS9l_WjePR4w
+
 ## ⚡️ Noir & Barretenberg Setup on Ubuntu
 
 This guide will help you install the **Noir CLI (`nargo`)** and the **Barretenberg Proving Backend (`bb`)** on an Ubuntu system to get started with writing and proving zero-knowledge circuits.
