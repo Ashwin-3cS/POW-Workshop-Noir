@@ -11,13 +11,14 @@ fn main(age : u64, min_age: pub u64) {
 
 
 
+
 //  a more comprehensive example with additional features:
 // Age Verification with Birth Year
 // This version uses birth year and current year for more realistic scenarios
-fn main_with_birth_year(
-    birth_year: Field,        
-    pub current_year: Field,  
-    pub min_age: Field        
+fn main(
+    birth_year: u64,        
+     current_year: pub u64,  
+     min_age:  pub u64        
 ) {
     // Calculate the person's age
     let age = current_year - birth_year;
@@ -26,8 +27,9 @@ fn main_with_birth_year(
     
     assert(birth_year > 1900);
     assert(birth_year <= current_year);
-}
 
+    
+}
 
 
 // Example with Multiple Conditions
