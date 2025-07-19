@@ -32,25 +32,3 @@ fn main(
 }
 
 
-// Example with Multiple Conditions
-// This circuit demonstrates more complex logic
-fn main_membership_eligibility(
-    age: Field,                    // Private: person's age
-    account_balance: Field,        // Private: bank account balance
-    pub min_age: Field,           // Public: minimum age (18)
-    pub min_balance: Field,       // Public: minimum balance (1000)
-    pub is_eligible: bool         // Public: expected eligibility result
-) {
-    // Check if person meets age requirement
-    let age_valid = age >= min_age;
-    
-    // Check if person meets balance requirement
-    let balance_valid = account_balance >= min_balance;
-    
-    // Both conditions must be true for eligibility
-    // In Noir, we can use boolean operations
-    let actually_eligible = age_valid & balance_valid;
-    
-    // Verify that the calculated eligibility matches the expected result
-    assert(actually_eligible == is_eligible);
-}
