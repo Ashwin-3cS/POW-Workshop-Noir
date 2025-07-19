@@ -1,12 +1,14 @@
 // Simple Age Verification Circuit
 // This circuit proves that someone is 18 or older without revealing their exact age
-fn main(
-    age: Field,           
-    pub min_age: Field    
-) {
-    // In Noir, we use assert() to create constraints
+fn main(age : u64, min_age: pub u64) {
+
+    //In noir we use assert to create constraints
     assert(age >= min_age); 
 }
+
+
+
+
 
 
 //  a more comprehensive example with additional features:
